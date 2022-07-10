@@ -1,7 +1,10 @@
 # cat_dog_docker
 
 ## Model training template
-[here](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/transfer_learning.ipynb?force_kitty_mode=1&force_corgi_mode=1#scrollTo=Q9pFlFWgBKgH)
+
+### Implementation in pytorch
+The implementation can be found [here](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
+
 
 Docker creation from https://docs.docker.com/language/python/build-images/
 
@@ -42,3 +45,12 @@ docker run --rm -it  \
            tverous/pytorch-notebook:latest
 ```
 
+In windows
+```
+winpty docker run --rm -it -p 8888:8888 -v //c//Users//pasqui//projects//cat_dog_docker:/app tverous/pytorch-notebook:latest
+```
+
+Info [here](https://stackoverflow.com/questions/48623005/docker-error-the-input-device-is-not-a-tty-if-you-are-using-mintty-try-prefi)
+
+### Legacy Implementation in Tensorflow
+The implementation can be found [here](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/images/transfer_learning.ipynb?force_kitty_mode=1&force_corgi_mode=1#scrollTo=Q9pFlFWgBKgH)
